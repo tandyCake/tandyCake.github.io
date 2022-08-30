@@ -1,0 +1,459 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Zeroes and Ones — Keep Talking and Nobody Explodes Module</title>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/ktane-utils.js"></script>
+    <style>
+        @font-face {
+            font-family: 'OpusChordsSansStd';
+            src: url('font/OpusChordsSansStd.otf');
+        }
+        .dark table, table {
+            margin: 1em auto;
+            border: none;
+        }
+        div.container {
+            width: 30em;
+            height: 17em;
+        }
+        div.container img {
+            animation: wave .5s ease infinite;
+            filter: grayscale(100%);
+        }
+        @keyframes wave {
+            0%      {transform: rotate(0deg);}
+            50%     {transform: rotate(20deg);}
+            100%    {transform: rotate(0deg);}
+        }
+        table.four-words-table th:not(.top-right), table.centred th:not(.top-right) {
+            border-right: 3px solid black;
+        }
+        th.top-right {
+            border-bottom: 3px solid black;
+        }
+        svg {
+            margin: auto;
+            margin-bottom: 1em;
+            display: block;
+            width: 10cm;
+        }
+        svg .greek-letter {
+            user-select: none;
+            pointer-events: none;
+        }
+        .diagram {
+            filter: grayscale(100%);
+        }
+        .page-bg-02 table, .page-bg-02 p:not(.flavour-text) {
+            font-size: 0.85em;
+        }
+        table.cities img {
+            width: 3cm;
+            transition: transform .2s;
+        }
+        table.cities img:hover {
+            transform: scale(2.5);
+            box-shadow: 0 0 .1cm black;
+        }
+        table.cities td {
+            padding: 0.25em;
+        }
+        table.city-positions td {
+            width: 2em;
+            height: 2em;
+        }
+        table.centred td, table.centred th {
+            text-align: center;
+        }
+        caption {
+            font-style: italic;
+        }
+        .music-chord {
+            font-family: 'OpusChordsSansStd';
+            word-spacing: 0.3em;
+            white-space: nowrap;
+        }
+        table.page-4-table {
+            display; inline;
+            float: left;
+        }
+        table.page-4-table td {
+            text-align: center;
+        }
+        table.page-4-table img {
+            width: 3em;
+        }
+        .page-footer::before { content: 'Page '; }
+        .page-footer::after { content: ' of 6'; }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Zeroes and Ones</span>
+            </div>
+            <div class="page-content">
+                <img src="img/Component/Zeroes and Ones.svg" class="diagram">
+                <h2>On the Subject of <a href="https://www.youtube.com/watch?v=7rFrfgfg6Rc">Zeroes and Ones</a></h2>
+                <p class="flavour-text">This time, the revolution will be computerised.</p>
+                
+                <p>This is the Internet. Say "Hi, Internet!"</p>
+                <div class="container">
+                <svg style="float: left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 164.23067 111.31399"><defs><linearGradient id="d"><stop offset="0" stop-opacity="0"/><stop offset="1"/></linearGradient><linearGradient id="c"><stop offset="0"/><stop offset="1" stop-opacity="0"/></linearGradient><linearGradient id="b"><stop offset="0"/><stop offset="1" stop-opacity="0"/></linearGradient><linearGradient id="a"><stop offset="0" stop-opacity="0"/><stop offset="1"/></linearGradient><linearGradient xlink:href="#a" id="e" x1="-2.4568448" x2="3.0238082" y1="15.780505" y2="15.780505" gradientUnits="userSpaceOnUse"/><linearGradient xlink:href="#a" id="f" x1="-2.4568448" x2="3.0238082" y1="15.780505" y2="15.780505" gradientTransform="translate(0 52.916668)" gradientUnits="userSpaceOnUse"/><linearGradient xlink:href="#b" id="h" x1="-2.4568448" x2="3.0238082" y1="15.780505" y2="15.780505" gradientTransform="translate(158.75002 52.916668)" gradientUnits="userSpaceOnUse"/><linearGradient xlink:href="#b" id="g" x1="-2.4568448" x2="3.0238082" y1="15.780505" y2="15.780505" gradientTransform="translate(158.75002)" gradientUnits="userSpaceOnUse"/><linearGradient xlink:href="#c" id="i" x1="13.512649" x2="13.512648" y1="105.64435" y2="111.125" gradientTransform="translate(26.458334)" gradientUnits="userSpaceOnUse"/><linearGradient xlink:href="#c" id="j" x1="13.512649" x2="13.512648" y1="105.64435" y2="111.125" gradientTransform="translate(52.916668)" gradientUnits="userSpaceOnUse"/><linearGradient xlink:href="#c" id="k" x1="13.512649" x2="13.512648" y1="105.64435" y2="111.125" gradientTransform="translate(79.375002)" gradientUnits="userSpaceOnUse"/><linearGradient xlink:href="#d" id="l" x1="13.512649" x2="13.512648" y1="105.64435" y2="111.125" gradientTransform="translate(26.458334 -105.83334)" gradientUnits="userSpaceOnUse"/><linearGradient xlink:href="#d" id="m" x1="13.512649" x2="13.512648" y1="105.64435" y2="111.125" gradientTransform="translate(52.916668 -105.83334)" gradientUnits="userSpaceOnUse"/><linearGradient xlink:href="#d" id="n" x1="13.512649" x2="13.512648" y1="105.64435" y2="111.125" gradientTransform="translate(79.375002 -105.83334)" gradientUnits="userSpaceOnUse"/></defs><path fill="none" stroke="#000" stroke-width="1.323" d="M13.512649 26.269344 13.512648 31.75M39.97098 26.269344V31.75" style="font-variation-settings:normal" transform="translate(2.4568447 .18898545)"/><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.32292" d="M26.4583337 15.96949045a10.488839 10.488839 0 0 1-10.488839 10.488839 10.488839 10.488839 0 0 1-10.4888396-10.488839 10.488839 10.488839 0 0 1 10.4888396-10.488839 10.488839 10.488839 0 0 1 10.488839 10.488839"/><g stroke-width="1.32292" aria-label="α" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="M17.982452 19.90098h-1.992754l-.809804-2.175357q-.992408 2.342081-2.858133 2.342081-1.444945 0-2.3658989-1.206767-.9130146-1.214706-.9130146-2.953404 0-1.9213.9765285-3.056614.976529-1.135314 2.524684-1.135314 1.730758 0 2.635834 1.953058l.64308-1.786333h1.881604l-1.452885 3.802904zm-3.286853-4.120475q-.690715-1.778393-1.111496-2.175356-.420781-.404902-.920954-.404902-.690715 0-1.198828.714533-.500173.714533-.500173 2.016571 0 1.135314.508112 1.897483.508113.754229 1.190889.754229.754229 0 1.214706-.825683.460477-.825682.817744-1.976875z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path fill="none" stroke="url(#e)" stroke-width="1.32299993" d="M-2.4568447 15.780505h5.480653" style="font-variation-settings:normal" transform="translate(2.4568447 .18898545)"/><path fill="none" stroke="#000" stroke-width="1.323" d="M24.001489 68.697173h5.480653M13.512649 79.186012l-.000001 5.480656M50.45982 68.697173h5.480654" style="font-variation-settings:normal" transform="translate(2.4568447 .18898545)"/><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.32292" d="M26.4583337 68.88615945a10.488839 10.488839 0 0 1-10.488839 10.488839 10.488839 10.488839 0 0 1-10.4888396-10.488839 10.488839 10.488839 0 0 1 10.4888396-10.488839 10.488839 10.488839 0 0 1 10.488839 10.488839"/><g stroke-width="1.32292" aria-label="ν" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="m17.017832 64.687847-2.723166 8.01865h-1.500519l-2.78668-8.01865h1.889544l1.873664 5.438391 1.82603-5.438391z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path fill="none" stroke="url(#f)" stroke-width="1.32299993" d="M-2.4568447 68.697173h5.480653" style="font-variation-settings:normal" transform="translate(2.4568447 .18898545)"/><path fill="none" stroke="#000" stroke-width="1.323" d="M103.37649 15.780505h5.48065M129.83483 15.780505h5.48065M119.34598 26.269344V31.75" style="font-variation-settings:normal" transform="translate(2.4568447 .18898545)"/><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.32292" d="M105.8333247 15.96949045a10.488839 10.488839 0 0 1-10.488838 10.488839 10.488839 10.488839 0 0 1-10.488839-10.488839 10.488839 10.488839 0 0 1 10.488839-10.488839 10.488839 10.488839 0 0 1 10.488838 10.488839"/><g stroke-width="1.32292" aria-label="δ" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="M95.674321 10.2786v1.405248h-3.294792l1.214707.833622q1.047982.714534 1.667244 1.333796.627201.619262.992407 1.460823.373145.833622.373145 1.905422 0 1.857786-1.000346 2.961343-.992407 1.103557-2.715226 1.103557-1.738698 0-2.754923-1.063861-1.008285-1.071799-1.008285-2.905768 0-1.667244.936832-2.667591.936832-1.008285 2.612016-1.008285l-2.651712-2.048329V10.2786Zm-2.754922 4.374531q-1.849847 0-1.849847 2.56438 0 2.572319 1.826029 2.572319 1.81809 0 1.81809-2.588198 0-2.548501-1.794272-2.548501z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path fill="none" stroke="url(#g)" stroke-width="1.32299993" d="M156.29317 15.780505h5.48065" style="font-variation-settings:normal" transform="translate(2.4568447 .18898545)"/><path fill="none" stroke="#000" stroke-width="1.323" d="M103.37649 68.697173h5.48065M92.887651 79.186012l-.000001 5.480656M119.34598 79.186012v5.480656" style="font-variation-settings:normal" transform="translate(2.4568447 .18898545)"/><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.32292" d="M105.8333247 68.88615945a10.488839 10.488839 0 0 1-10.488838 10.488839 10.488839 10.488839 0 0 1-10.488839-10.488839 10.488839 10.488839 0 0 1 10.488839-10.488839 10.488839 10.488839 0 0 1 10.488838 10.488839"/><g stroke-width="1.32292" aria-label="π" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="M89.696063 72.706497v-6.613401h-.968589v-1.405249h8.320342v1.405249h-.976529v6.613401h-1.810151v-6.613401h-2.754922v6.613401z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path fill="none" stroke="url(#h)" stroke-width="1.32299993" d="M156.29317 68.697173h5.48065" style="font-variation-settings:normal" transform="translate(2.4568447 .18898545)"/><path fill="none" stroke="url(#i)" stroke-width="1.32299993" d="m39.970983 105.64435-.000001 5.48065" style="font-variation-settings:normal" transform="translate(2.4568447 .18898545)"/><path fill="none" stroke="url(#j)" stroke-width="1.32299993" d="m66.429317 105.64435-.000001 5.48065" style="font-variation-settings:normal" transform="translate(2.4568447 .18898545)"/><path fill="none" stroke="url(#k)" stroke-width="1.32299993" d="m92.887651 105.64435-.000001 5.48065" style="font-variation-settings:normal" transform="translate(2.4568447 .18898545)"/><path fill="none" stroke="url(#l)" stroke-width="1.32299993" d="m39.970983-.18898533-.000001 5.48064973" style="font-variation-settings:normal" transform="translate(2.4568447 .18898545)"/><path fill="none" stroke="url(#m)" stroke-width="1.32299993" d="m66.429317-.18898533-.000001 5.48064973" style="font-variation-settings:normal" transform="translate(2.4568447 .18898545)"/><path fill="none" stroke="url(#n)" stroke-width="1.32299993" d="M92.887651-.18898533 92.88765 5.2916644" style="font-variation-settings:normal" transform="translate(2.4568447 .18898545)"/><path fill="none" stroke="#000" stroke-width="1.323" d="M24.001486 42.238839h5.480654M76.918154 42.238839h5.480654M103.37649 42.238839h5.48065M129.83483 42.238839h5.48065M50.459822 95.155507h5.48065M76.918156 95.155507h5.48065M129.83483 95.155507h5.48065M66.429314 26.269344V31.75M145.80432 26.269344V31.75M92.887643 52.727678v5.480656M66.429309 52.727678v5.480656M39.970975 52.727678v5.480656M66.429309 79.186012v5.480656M145.80432 79.186012v5.480656" style="font-variation-settings:normal" transform="translate(2.4568447 .18898545)"/><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.323" d="M52.9166657 15.96949045a10.488839 10.488839 0 0 1-10.488839 10.488839 10.488839 10.488839 0 0 1-10.48884-10.488839 10.488839 10.488839 0 0 1 10.48884-10.488839 10.488839 10.488839 0 0 1 10.488839 10.488839"/><g stroke-width="1.32292" aria-label="β" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="M36.303043 22.636055v-9.876437q0-1.437005.293752-2.191235.293753-.7621684 1.016225-1.1988275.722473-.4445985 2.008633-.4445985 1.476701 0 2.421473.6748369.952711.6748371.952711 1.9292401 0 1.659304-1.865726 2.270627 2.508806.603384 2.508806 2.953404 0 1.437006-.944772 2.389717-.944771.952711-2.445291.952711-1.405249 0-2.13566-1.024165v3.564727zm1.810151-4.660344q.595444.627201 1.571973.627201.897136 0 1.460823-.571626.571627-.571627.571627-1.556095 0-.801865-.452538-1.373491-.444599-.571627-1.722819-.571627v-1.214706q.968589-.01588 1.294099-.43666.32551-.42872.32551-1.103556 0-1.571973-1.564034-1.571973-.698655 0-1.095618.396962-.389023.396963-.389023 1.945119z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.323" d="M79.3749977 15.96948845a10.488839 10.488839 0 0 1-10.488839 10.488839 10.488839 10.488839 0 0 1-10.488839-10.488839 10.488839 10.488839 0 0 1 10.488839-10.4888389 10.488839 10.488839 0 0 1 10.488839 10.4888389"/><g stroke-width="1.32292" aria-label="γ" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="M65.500422 21.143473v-2.850194l-2.739044-7.875743h1.968936l1.857787 5.549541 1.945118-5.549541h1.564033l-2.786679 7.875743v2.850194z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.323" d="M132.2916647 15.96949045a10.488839 10.488839 0 0 1-10.48884 10.488839 10.488839 10.488839 0 0 1-10.48884-10.488839 10.488839 10.488839 0 0 1 10.48884-10.488839 10.488839 10.488839 0 0 1 10.48884 10.488839"/><g stroke-width="1.32292" aria-label="ε" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="M120.08433 15.034216v1.246463q-.91302.0079-1.2941.06351-.38109.04764-.65102.32551-.262.277874-.262.722472 0 .587505.39696.905076.40491.309631 1.04005.309631 1.36555 0 1.75457-1.39731l1.66725.293753q-.23818 1.024164-1.1115 1.738697-.87332.714534-2.29444.714534-1.86573 0-2.61996-.746291-.75423-.754229-.75423-1.762515 0-1.468763 1.72282-1.9213-.96065-.404902-1.22265-.817744-.26199-.42078-.26199-.920954 0-.952711.77805-1.564033.78598-.619262 2.18329-.619262 2.90577 0 3.38213 2.230931l-1.63549.293752q-.26994-1.159131-1.54816-1.159131-1.23852 0-1.23852 1.008286 0 .516051.4049.793925.4049.269935 1.56404.261996z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.323" d="M158.7500047 15.96948845a10.488839 10.488839 0 0 1-10.48884 10.488839 10.488839 10.488839 0 0 1-10.48884-10.488839 10.488839 10.488839 0 0 1 10.48884-10.4888389 10.488839 10.488839 0 0 1 10.48884 10.4888389"/><g stroke-width="1.32292" aria-label="ζ" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="M143.45033 10.413566V9.008317h4.93822v1.190889q-1.3735.976528-2.38972 2.643772-1.00829 1.667245-1.00829 3.461517 0 1.06386.39697 1.452884.4049.389024 1.42906.452538.72248.0397 1.03211.222299.31757.174663.50017.555748.19054.381084.19054 1.016225 0 1.016225-.6669 2.548502l-1.57991-.198482q.56369-1.119435.56369-1.810151 0-.389023-.23818-.539869-.23024-.150846-.85744-.182603-2.69141-.11115-2.69141-3.143946 0-3.334488 3.56473-6.264074z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.323" d="M158.7500047 42.42782345a10.488839 10.488839 0 0 1-10.48884 10.488839 10.488839 10.488839 0 0 1-10.48884-10.488839 10.488839 10.488839 0 0 1 10.48884-10.488839 10.488839 10.488839 0 0 1 10.48884 10.488839"/><g stroke-width="1.32292" aria-label="μ" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="M142.41029 47.601807V36.87587h1.81015v4.287199q0 .881257.12703 1.325856.13497.444598.52399.762168.38902.317571.90508.317571.73835 0 1.17501-.516052.43666-.516052.43666-1.889543V36.87587h1.81015v8.01865h-1.53228v-1.230585q-.60338 1.397309-1.83397 1.397309-.57163 0-1.0321-.333449-.45254-.341388-.57957-.801865v3.675877z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.323" d="M132.2916647 42.42782345a10.488839 10.488839 0 0 1-10.48884 10.488839 10.488839 10.488839 0 0 1-10.48884-10.488839 10.488839 10.488839 0 0 1 10.48884-10.488839 10.488839 10.488839 0 0 1 10.48884 10.488839"/><g stroke-width="1.32292" aria-label="λ" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="m115.7495 47.657383 2.69141-7.399388-1.22265-3.437699h1.8816l3.8426 10.837087h-1.88954l-1.9213-5.501906-1.91336 5.501906z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.323" d="M105.8333247 42.42782345a10.488839 10.488839 0 0 1-10.488838 10.488839 10.488839 10.488839 0 0 1-10.488839-10.488839 10.488839 10.488839 0 0 1 10.488839-10.488839 10.488839 10.488839 0 0 1 10.488838 10.488839"/><g stroke-width="1.32292" aria-label="κ" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="m93.590263 40.897105 2.850194 5.35106h-1.984815l-2.088024-3.890236-1.222646 1.230585v2.659651h-1.810151v-8.01865h1.810151v2.151539l.0079.674837q0 .190542-.0397.682776.285813-.365206.730412-.841562l2.477048-2.66759h1.794272z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.323" d="M79.3749977 42.42782345a10.488839 10.488839 0 0 1-10.488839 10.488839 10.488839 10.488839 0 0 1-10.488839-10.488839 10.488839 10.488839 0 0 1 10.488839-10.488839 10.488839 10.488839 0 0 1 10.488839 10.488839"/><g stroke-width="1.32292" aria-label="ι" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="M67.334389 46.248165h-1.810151v-8.01865h1.810151z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.323" d="M52.9166657 42.42782345a10.488839 10.488839 0 0 1-10.488839 10.488839 10.488839 10.488839 0 0 1-10.48884-10.488839 10.488839 10.488839 0 0 1 10.48884-10.488839 10.488839 10.488839 0 0 1 10.488839 10.488839"/><g stroke-width="1.32292" aria-label="θ" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="M39.963042 37.006866q1.770455 0 2.754923 1.468763.984468 1.460823.984468 4.120475 0 2.66759-.992408 4.128414-.984467 1.452884-2.746983 1.452884-1.675183 0-2.707287-1.381431-1.024164-1.381431-1.024164-4.199867 0-2.770801 1.008286-4.17605 1.016225-1.413188 2.723165-1.413188zm-1.873664 4.763555h3.747329q-.06351-1.826029-.603383-2.627894-.53987-.809805-1.270282-.809805-.730411 0-1.270281.809805-.539869.809804-.603383 2.627894zm0 1.230585q.05557 3.85054 1.873664 3.85054 1.81809 0 1.873665-3.85054z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.323" d="M26.4583327 42.42782345a10.488839 10.488839 0 0 1-10.488839 10.488839 10.488839 10.488839 0 0 1-10.4888396-10.488839 10.488839 10.488839 0 0 1 10.4888396-10.488839 10.488839 10.488839 0 0 1 10.488839 10.488839"/><g stroke-width="1.32292" aria-label="η" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="M16.898742 47.685169h-1.810151v-7.748715q0-1.659305-1.286159-1.659305-.825683 0-1.349674.587505-.516052.579566-.516052 1.540216v4.573012h-1.810151v-8.01865h1.675184v1.325856q.8495-1.49258 2.516744-1.49258.920954 0 1.540216.412841.627202.412842.833622 1.016225.206421.603384.206421 1.905422z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.323" d="M52.9166657 68.88615945a10.488839 10.488839 0 0 1-10.488839 10.488839 10.488839 10.488839 0 0 1-10.48884-10.488839 10.488839 10.488839 0 0 1 10.48884-10.488839 10.488839 10.488839 0 0 1 10.488839 10.488839"/><g stroke-width="1.32292" aria-label="ξ" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="M41.046753 75.243095q.42872-1.103557.42872-1.722819 0-.42078-.277874-.579565-.269935-.150846-1.055922-.21436-1.730758-.127029-2.556441-.825683-.817743-.698655-.817743-2.095964 0-1.159132.603384-1.841908.611322-.682776 1.849847-1.047982-1.881604-.53193-1.881604-1.754576 0-1.28616 1.881604-1.881604h-2.04039v-1.405249h5.748023v1.405249h-1.016225q-2.651712 0-2.651712 1.564034 0 .658958.508112 1.095617.508113.436659 1.699001.436659h.674837v1.429067h-.674837q-1.047982 0-1.59579.127028-.53987.127028-.865379.53987-.32551.412841-.32551 1.047982 0 .563687.254056.905075.254057.341388.627202.460477.381084.119089 1.341734.21436.865379.07939 1.302038.222299.43666.142907.698655.53193.269935.381085.269935 1.127375 0 .913014-.53193 2.540562z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.323" d="M79.3749977 68.88615945a10.488839 10.488839 0 0 1-10.488839 10.488839 10.488839 10.488839 0 0 1-10.488839-10.488839 10.488839 10.488839 0 0 1 10.488839-10.488839 10.488839 10.488839 0 0 1 10.488839 10.488839"/><g stroke-width="1.32292" aria-label="ο" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="M66.353888 72.873222q-1.778393 0-2.715226-1.278221-.936832-1.27822-.936832-2.929586 0-1.778394 1.032103-2.961343 1.040043-1.182949 2.739044-1.182949 1.61167 0 2.643773 1.151192 1.040043 1.151192 1.040043 2.9931 0 1.897483-1.079739 3.056614-1.0718 1.151193-2.723166 1.151193zm.06351-1.492581q1.82603 0 1.82603-2.723165 0-1.230585-.436659-1.937179-.43666-.714533-1.341735-.714533-.936832 0-1.38937.738351-.452538.730411-.452538 1.945118 0 1.309977.476356 2.000693.484294.690715 1.317916.690715z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path class="highlightable" fill="#FFF"  stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.323" d="M132.2916647 68.88615945a10.488839 10.488839 0 0 1-10.48884 10.488839 10.488839 10.488839 0 0 1-10.48884-10.488839 10.488839 10.488839 0 0 1 10.48884-10.488839 10.488839 10.488839 0 0 1 10.48884 10.488839"/><g stroke-width="1.32292" aria-label="ρ" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="M115.62643 74.143505v-5.819476q0-1.913361.27788-2.858132.27787-.944772 1.17501-1.579913.89713-.63514 2.19123-.63514 1.73076 0 2.76287 1.151192 1.0321 1.143253 1.0321 3.120128 0 1.865726-.94477 2.977222-.94477 1.103557-2.39766 1.103557-1.50846 0-2.28651-1.270282v3.810844zm3.66-9.40802q-.88126 0-1.34173.595444-.45254.595444-.45254 2.095964 0 2.683469 1.84191 2.683469 1.81015 0 1.81015-2.691408 0-2.683469-1.85779-2.683469z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path class="highlightable" fill="#FFF"  stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.323" d="M158.7500047 68.88615945a10.488839 10.488839 0 0 1-10.48884 10.488839 10.488839 10.488839 0 0 1-10.48884-10.488839 10.488839 10.488839 0 0 1 10.48884-10.488839 10.488839 10.488839 0 0 1 10.48884 10.488839"/><g stroke-width="1.32292" aria-label="σ" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="M149.80967 64.687847v1.405249h-1.85778q.84156.722472 1.07974 1.349673.24611.619262.24611 1.460824 0 1.770454-1.02416 2.874011-1.02416 1.095618-2.69141 1.095618-1.61167 0-2.69141-1.016225-1.0718-1.024165-1.0718-3.183643 0-1.897482.99241-3.024857.99241-1.127374 2.78668-1.127374.61132 0 1.13531.166724zm-4.27132 1.317917q-1.81809 0-1.81809 2.67553 0 2.699347 1.82603 2.699347 1.81015 0 1.81015-2.699347 0-2.67553-1.81809-2.67553z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.323" d="M158.7500047 95.34448745a10.488839 10.488839 0 0 1-10.48884 10.488838 10.488839 10.488839 0 0 1-10.48884-10.488838 10.488839 10.488839 0 0 1 10.48884-10.488839 10.488839 10.488839 0 0 1 10.48884 10.488839"/><g stroke-width="1.32292" aria-label="ω" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="M146.65779 92.972204v2.67553q0 1.421127.24612 1.833968.25405.404902.71453.404902.61926 0 1.02416-.555748.41284-.563687.41284-1.857786 0-2.040389-1.30203-3.779087l1.2941-.754229q1.9213 1.937179 1.9213 4.461863 0 2.048328-.91302 3.008978-.90507.960651-2.19917.960651-.63514 0-1.12738-.269935-.49223-.269935-.92095-1.135314-.65896 1.405249-2.04833 1.405249-1.30998 0-2.21505-.96859-.90508-.976529-.90508-2.905768 0-2.619955 1.9213-4.557134l1.30204.754229q-1.30204 1.746637-1.30204 3.787026 0 1.278221.4049 1.841908.40491.563687 1.03211.563687.43666 0 .69071-.381084.262-.389024.262-1.857786v-2.67553z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.323" d="M132.2916647 95.34448745a10.488839 10.488839 0 0 1-10.48884 10.488838 10.488839 10.488839 0 0 1-10.48884-10.488838 10.488839 10.488839 0 0 1 10.48884-10.488839 10.488839 10.488839 0 0 1 10.48884 10.488839"/><g stroke-width="1.32292" aria-label="ψ" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="M118.4806 100.51847v-2.508801q-1.45289-.04763-2.31826-.452538-.85744-.404902-1.23853-1.16707-.38108-.770108-.38108-2.326203v-4.27132h1.81015v4.27132q0 1.50052.41284 1.984815.42078.484294 1.71488.508112v-6.764247h1.73076v6.764247q1.26234-.02382 1.69106-.484295.43666-.468416.43666-2.008632v-4.27132h1.81015v4.27132q0 1.460824-.34933 2.24681-.34933.785987-1.22264 1.222646-.87332.42872-2.3659.476355v2.508801z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.323" d="M105.8333247 95.34448745a10.488839 10.488839 0 0 1-10.488838 10.488838 10.488839 10.488839 0 0 1-10.488839-10.488838 10.488839 10.488839 0 0 1 10.488839-10.488839 10.488839 10.488839 0 0 1 10.488838 10.488839"/><g stroke-width="1.32292" aria-label="χ" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="m91.930964 94.706938-2.57232-4.9144h1.953058l1.913361 3.683815 1.826029-3.683815h1.643426l-2.691408 5.192274 2.88989 5.533658h-1.953058l-2.159478-4.390405-2.199174 4.390405h-1.699001z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.323" d="M79.3749977 95.34448745a10.488839 10.488839 0 0 1-10.488839 10.488838 10.488839 10.488839 0 0 1-10.488839-10.488838 10.488839 10.488839 0 0 1 10.488839-10.488839 10.488839 10.488839 0 0 1 10.488839 10.488839"/><g stroke-width="1.32292" aria-label="φ" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="M65.579813 100.60183v-2.500863q-1.9213-.150846-2.953404-1.294099-1.024164-1.151192-1.024164-2.88989 0-1.397309.666898-2.421473.666897-1.024164 1.699001-1.373492l.539869 1.444945q-1.103557.770108-1.103557 2.310324 0 2.405595 2.175357 2.834315v-6.95479q.53193-.04763.928893-.04763 2.492927 0 3.620302 1.254403 1.127374 1.254402 1.127374 2.977221 0 1.627548-1.032103 2.826376-1.024164 1.190889-2.985161 1.333795v2.500863zm1.659305-3.882294q2.191235-.333448 2.191235-2.866072 0-2.492927-2.191235-2.842254z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.323" d="M52.9166657 95.34448745a10.488839 10.488839 0 0 1-10.488839 10.488838 10.488839 10.488839 0 0 1-10.48884-10.488838 10.488839 10.488839 0 0 1 10.48884-10.488839 10.488839 10.488839 0 0 1 10.488839 10.488839"/><g stroke-width="1.32292" aria-label="υ" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="M38.4784 91.062816v4.660345q0 .928893.08733 1.27822.09527.349328.436659.555748.341388.198482.96859.198482.587505 0 .936832-.182603.349327-.190542.452538-.531931.10321-.341388.10321-1.317916v-4.660345h1.810151v4.660345q0 1.381431-.333449 2.111842-.325509.722473-1.0718 1.0718-.738351.341388-1.833968.341388-1.635487 0-2.500866-.682776-.865377-.690715-.865377-2.842254v-4.660345z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path class="highlightable" fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.323" d="M26.4583327 95.34448745a10.488839 10.488839 0 0 1-10.488839 10.488838 10.488839 10.488839 0 0 1-10.4888396-10.488838 10.488839 10.488839 0 0 1 10.4888396-10.488839 10.488839 10.488839 0 0 1 10.488839 10.488839"/><g stroke-width="1.32292" aria-label="τ" font-family="Franklin Gothic Medium" font-size="16.2596" font-weight="400" letter-spacing="0" style="line-height:normal;-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center;text-decoration-line:none;text-decoration-color:#000" text-anchor="middle"><path class="greek-letter" d="M12.615513 99.164825v-6.613401h-2.302385v-1.405249h6.399042v1.405249h-2.286507v6.613401z" style="-inkscape-font-specification:'Franklin Gothic Medium, ';text-align:center" transform="translate(2.4568447 .18898545)"/></g><path fill="none" stroke="#000" stroke-width="1.323" d="M24.001488 95.155507h5.48065" style="font-variation-settings:normal" transform="translate(2.4568447 .18898545)"/><g transform="translate(1.1241415 -.20220137)"><circle cx="77.02243" cy="54.233772" r="1.7706606"/><circle cx="84.959938" cy="54.233772" r="1.7706606"/><path d="m78.351951 57.086175 5.278467-.000001s-.1183 2.1691-2.639233 2.1691-2.639234-2.169099-2.639234-2.169099z"/></g></svg>
+                <img src="img/Zeroes and Ones/wave.png" width="100" style="float: right" />
+                </div>
+                <p>The display will cycle through three different information types, which will tell you how you should navigate the Internet.</p>
+                <p>One of the Internet's nodes is the starting node and another is the goal node. Your task is to navigate from the former to the latter, moving exclusively between connected nodes. The Internet wraps around.</p>
+                <p>Once a suitable path has been found, press the display to reveal a keypad.</p>
+                <p>For each direction in the path, convert it into a pair of bits (where up = 00, right = 01, down = 10 and left = 11). Concatenate these bits and convert this binary number into decimal.</p>
+                <p>Enter this number, then press the submit button. The clear button will empty your input, unless your input is already empty, in which case the screen will revert to displaying information.</p>
+                <p>Submitting a valid number will solve the module. Submitting a number whose path does not end on the goal node, moves between unconnected nodes or is otherwise invalid will cause a strike. The submit button does nothing when your input is empty.</p>
+                
+                <p>An option in this module's mod settings can be enabled, which will remove all animations that include motion. Where motion is needed as information, an arrow will show which way the motion is in.</p>
+                
+            </div>
+            <div class="page-footer relative-footer">1</div>
+        </div>
+
+        <div class="page page-bg-02">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Zeroes and Ones</span>
+            </div>
+            <div class="page-content">
+                
+                <h3>Four Words (Starting Node)</h3>
+                <p class="flavour-text">[This information type will be on the module for certain.]</p>
+                <p>The displayed words are headings from Notepad++.</p>
+                <p>Modify a variable X according to the headers' modifications, taken in reading order on the module, in the table below. Assume that X has an initial value of the first digit of the serial number, plus ten.</p>
+                <table class="four-words-table">
+                <tr>
+                <th style="border-bottom: 3px solid black">Heading</th>
+                <th class="top-right">Modification</th>
+                </tr>
+                <tr>
+                <th>File</th>
+                <td>Replace the first digit of X with a nine. If this did nothing, replace it with an eight instead.</td>
+                </tr>
+                <tr>
+                <th>Edit</th>
+                <td>Reverse X. If this did nothing, add 1.</td>
+                </tr>
+                <tr>
+                <th>Search</th>
+                <td>Add the number of modules on the bomb to X. Modules released before X-Ray count as three modules. For this modification, needies count as modules.</td>
+                </tr>
+                <tr>
+                <th>View</th>
+                <td>Multiply X by the number of modifications that have been applied so far, plus one.</td>
+                </tr>
+                <tr>
+                <th>Encoding</th>
+                <td>Convert the first letter of the serial number into a number (using A0Z25), then take this value modulo 10 and add two. Multiply X by this value.</td>
+                </tr>
+                <tr>
+                <th>Language</th>
+                <td>Add the number of letters in the bomb's serial number to X. Vowels count as three letters, where the vowels are A, E, I, O and U.</td>
+                </tr>
+                <tr>
+                <th>Settings</th>
+                <td>Add X's binary representation, reversed.</td>
+                </tr>
+                <tr>
+                <th>Tools</th>
+                <td>Add the number of battery holders on the bomb, plus one, to X. D battery holders count as three battery holders.</td>
+                </tr>
+                <tr>
+                <th>Macro</th>
+                <td>Take X's digital root and multiply it by eleven.</td>
+                </tr>
+                <tr>
+                <th>Run</th>
+                <td>Repeat the previous modification. If this is the first heading, do the modification related to the next heading.</td>
+                </tr>
+                <tr>
+                <th>Plugins</th>
+                <td>Multiply X by the number of ports on the bomb, plus one. If this did nothing, add this value to X instead.</td>
+                </tr>
+                <tr>
+                <th>Window</th>
+                <td>Multiply X by the difference between the number of lit indicators on the bomb and the number of unlit indicators on the bomb, plus two.</td>
+                </tr>
+                <tr>
+                <th>?</th>
+                <td>If the bomb knows your IP address, add the sum of the four numbers in your IP address, plus one, to X. Otherwise, if the voltage of the bomb is known, multiply X by the voltage of the bomb, rounding the voltage up. Otherwise, add 1 to X until it appears in the Fibonacci sequence.</td>
+                </tr>
+                </table>
+                
+                <p>Modulo X by the number of nodes in the Internet and add one. Then, from the Xth node in reading order, move to the Nth node in reading order that is connected to this node, where N is the last digit of the bomb's serial number, modulo the number of these connected nodes, plus one. The node you moved to is the starting node. For example, if X is 10 and N is 3, the starting node is π.</p>
+                
+                </div>
+            <div class="page-footer relative-footer">2</div>
+        </div>
+
+        <div class="page page-bg-03">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Zeroes and Ones</span>
+            </div>
+            <div class="page-content">
+                
+                <h3>Pictures of Cities (Goal Node)</h3>
+                <p class="flavour-text">[This information type will be on the module for certain.]</p>
+                
+                <p>Identify the four displayed images of cities using Table 1. Where the first image is K and the three afterwards are 1, 2 and 3, use Table 2 to find the position of the goal node.</p>
+                
+                <h4>Table 1</h4>
+                <table class="cities">
+                <tr>
+                <caption>Hover over an image to enlarge it.</caption>
+                <th>London</th>
+                <td><img src='img/Zeroes and Ones/cities/london 1.png' /></td>
+                <td><img src='img/Zeroes and Ones/cities/london 2.png' /></td>
+                <td><img src='img/Zeroes and Ones/cities/london 3.png' /></td>
+                <td><img src='img/Zeroes and Ones/cities/london 4.png' /></td>
+                </tr>
+                <tr>
+                <th>Paris</th>
+                <td><img src='img/Zeroes and Ones/cities/paris 1.png' /></td>
+                <td><img src='img/Zeroes and Ones/cities/paris 2.png' /></td>
+                <td><img src='img/Zeroes and Ones/cities/paris 3.png' /></td>
+                <td><img src='img/Zeroes and Ones/cities/paris 4.png' /></td>
+                </tr>
+                <tr>
+                <th>Berlin</th>
+                <td><img src='img/Zeroes and Ones/cities/berlin 1.png' /></td>
+                <td><img src='img/Zeroes and Ones/cities/berlin 2.png' /></td>
+                <td><img src='img/Zeroes and Ones/cities/berlin 3.png' /></td>
+                <td><img src='img/Zeroes and Ones/cities/berlin 4.png' /></td>
+                </tr>
+                </table>
+                
+                <h4>Table 2</h4>
+                <table class="city-positions">
+                <tr>
+                <th class="empty"></th>
+                <th class="empty"></th>
+                <th colspan="2">K=London</th>
+                <th colspan="2">K=Paris</th>
+                <th colspan="2">K=Berlin</th>
+                </tr>
+                <tr>
+                <th class="empty"></th>
+                <th class="empty"></th>
+                <th>1=K</th>
+                <th>1≠K</th>
+                <th>1=K</th>
+                <th>1≠K</th>
+                <th>1=K</th>
+                <th>1≠K</th>
+                </tr>
+                <tr>
+                <th rowspan="2">2=K</th>
+                <th>3=K</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <th>3≠K</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <th rowspan="2">2≠K</th>
+                <th>3=K</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <th>3≠K </th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                </table>
+                
+                </div>
+            <div class="page-footer relative-footer">3</div>
+        </div>
+
+        <div class="page page-bg-04">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Zeroes and Ones</span>
+            </div>
+            <div class="page-content">
+            
+            <h3>One Word With Symbol (Special Row)</h3>
+            
+            <p>One row of the Internet is a special row. This row can be determined by the displayed word:</p>
+            
+            <table class="centred">
+            <tr>
+            <th style="border-bottom: 3px solid black">Word</th>
+            <th class="top-right">Row</th>
+            </tr>
+            <tr>
+            <th>Truth</th>
+            <td>1</td>
+            </tr>
+            <tr>
+            <th>Lies</th>
+            <td>2</td>
+            </tr>
+            <tr>
+            <th>Receive</th>
+            <td>3</td>
+            </tr>
+            <tr>
+            <th>Send</th>
+            <td>4</td>
+            </tr>
+            </table>
+            
+            <p>The symbol over the word determines what special property the special row has:</p>
+            
+            <table>
+            <tr>
+            <th>Symbol</th>
+            <th>Meaning</th>
+            </tr>
+            <tr>
+            <th><img src="img/Zeroes and Ones/symbols/x.svg" width="50"/></th>
+            <td>You must not move to any nodes in this row (excluding the goal node).</td>
+            </tr>
+            <tr>
+            <th><img src="img/Zeroes and Ones/symbols/arrows.svg" width="50"/></th>
+            <td>At least four of this row's nodes must be visited.</td>
+            </tr>
+            <tr>
+            <th><img src="img/Zeroes and Ones/symbols/no arrows.svg" width="50"/></th>
+            <td>You must not move horizontally in this row.</td>
+            </tr>
+            <tr>
+            <th><img src="img/Zeroes and Ones/symbols/lines.svg" width="50"/></th>
+            <td>This row must be entered exactly twice.</td>
+            </tr>
+            <tr>
+            <th><img src="img/Zeroes and Ones/symbols/bend.svg" width="50"/></th>
+            <td>At least four of this row's nodes must be turned upon.</td>
+            </tr>
+            <tr>
+            <th><img src="img/Zeroes and Ones/symbols/no bend.svg" width="50"/></th>
+            <td>At least four of this row's nodes must be passed through directly.</td>
+            </tr>
+            </table>
+                
+                </div>
+            <div class="page-footer relative-footer">4</div>
+        </div>
+
+        <div class="page page-bg-04">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Zeroes and Ones</span>
+            </div>
+            <div class="page-content">
+            
+            <h3>Musical Notation (Necessary Path Segment)</h3>
+            <p>The sheet music is for a song from <a href="https://ktane.timwi.de/HTML/Piano%20Keys%20condensed%20(LeGeND).html">Piano Keys</a>. This song corresponds with a sub-path, which you must include in your answer, in any orientation and possibly flipped.</p>
+            
+            <div style="width: 100%">
+            <table class="page-4-table">
+            <tr>
+            <th>Song Title</th>
+            <th>Sub-path</th>
+            </tr>
+            <tr>
+            <th>Final Fantasy<br /><div class="music-chord">Bb Bb Bb Bb Gb Ab Bb Ab Bb</div></th>
+            <td><img src="img/Zeroes and Ones/subpaths/path 1.svg" /></td>
+            </tr>
+            <tr>
+            <th>Guile's Theme<br /><div class="music-chord">Eb Eb D D Eb Eb D Eb Eb D D Eb</div></th>
+            <td><img src="img/Zeroes and Ones/subpaths/path 2.svg" /></td>
+            </tr>
+            <tr>
+            <th>James Bond<br /><div class="music-chord">E F# F# F# F# E E E</div></th>
+            <td><img src="img/Zeroes and Ones/subpaths/path 3.svg" /></td>
+            </tr>
+            <tr>
+            <th>Jurassic Park<br /><div class="music-chord">Bb A Bb F Eb Bb A Bb F Eb</div></th>
+            <td><img src="img/Zeroes and Ones/subpaths/path 4.svg" /></td>
+            </tr>
+            <tr>
+            <th>Super Mario<br /><div class="music-chord">E E E C E G G</div></th>
+            <td><img src="img/Zeroes and Ones/subpaths/path 5.svg" /></td>
+            </tr>
+            <tr>
+            <th>Pink Panther<br /><div class="music-chord">C# D E F C# D E F Bb A</div></th>
+            <td><img src="img/Zeroes and Ones/subpaths/path 6.svg" /></td>
+            </tr>
+            <tr>
+            <th>Superman<br /><div class="music-chord">G G C G G C G C</div></th>
+            <td><img src="img/Zeroes and Ones/subpaths/path 7.svg" /></td>
+            </tr>
+            <tr>
+            <th>Tetris Theme A<br /><div class="music-chord">A E F G F E D D F A</div></th>
+            <td><img src="img/Zeroes and Ones/subpaths/path 8.svg" /></td>
+            </tr>
+            <tr>
+            <th>Empire Strikes Back<br /><div class="music-chord">G G G Eb Bb G Eb Bb G</div></th>
+            <td><img src="img/Zeroes and Ones/subpaths/path 9.svg" /></td>
+            </tr>
+            <tr>
+            <th>Zelda's Lullaby<br /><div class="music-chord">B D A G A B D A</div></th>
+            <td><img src="img/Zeroes and Ones/subpaths/path 10.svg" /></td>
+            <tr>
+            </table>
+            <img src="img/Zeroes and Ones/musical notation guide.svg" style="width: 12em; margin: auto; display: inline; float: right"/>
+            </div>
+            
+            </div>
+            <div class="page-footer relative-footer">5</div>
+        </div>
+
+        <div class="page page-bg-06">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Zeroes and Ones</span>
+            </div>
+            <div class="page-content">
+            
+                <h3>Binary (Dead Node)</h3>
+                <p>The direction that the text box containing binary moves determines which row of the Internet the dead node is in (up = 1, right = 2, down = 3, left = 4).</p>
+                <p>The column that the dead node is in is determined by the binary.</p>
+                <ul>
+                <li>There will be four strings of binary, each with a length of six bits.</li>
+                <li>Three of these strings are identical and have been offset by different amounts. The fourth, however, differs by one bit.</li>
+                <li>The position of this bit from left to right / top to bottom is the column of the dead node.</li>
+                </ul>
+                <p>The path cannot pass through the dead node and may only enter the same row / column as the dead node once.</p>
+                
+            </div>
+            <div class="page-footer relative-footer">6</div>
+        </div>
+    </div>
+</body>
+</html>
