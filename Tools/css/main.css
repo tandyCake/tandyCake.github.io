@@ -1,0 +1,16 @@
+html {
+    font-family: 'Josefin Sans';
+    font-size: 12pt;
+    line-height: 1.4;
+}
+input {
+	font-family: 'Josefin Sans';
+}
+.page {
+	width:  100%;
+	height: 100%;
+	padding-top: 		0.25in;
+	padding-left: 	0.25in;
+	padding-right:	0.25in;
+	
+}
