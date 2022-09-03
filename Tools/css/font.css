@@ -2,5 +2,5 @@
     font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 400;
-    src: local('Josefin Sans'), local('JosefinSans-Regular'), url(/font/JosefinSans-Regular.ttf);
+    src: local('Josefin Sans'), local('JosefinSans-Regular'), url(../font/JosefinSans-Regular.ttf);
 }
