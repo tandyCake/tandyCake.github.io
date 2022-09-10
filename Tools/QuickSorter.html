@@ -9,6 +9,13 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="js/jquery.3.1.1.min.js"></script>
     <style>
+	
+		.page > div {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+		
 		#elements {
 			width: 3in;
 			height: 2in;
@@ -16,20 +23,201 @@
 			font-family: 'Josefin Sans';
 		}
 		
+		#constructor {
+			text-align: center;
+		}
+		#constructor * {
+			margin-left: auto;
+			margin-right: auto;			
+		}
+		#constructor p, li, h1, h2, h3, h4 {
+			word-break: break-all;
+		}
+		#constructor .question {
+			font-size: 16pt;
+		}
+		.buttons button {
+			width: 1.5in;
+			height: 0.5in;
+		}
+		
+		.fade {
+			transition: 0.5s;
+		}
+		.start-visible {
+			visibility: visible; 
+			opacity: 1;
+		}
+		.start-hidden {
+			visibility: hidden; 
+			opacity: 0;
+		}
     </style>
 	<script>
+	class Node {
+		parent;
+		value;
+		lessBranch;
+		moreBranch;
+		
+		constructor(parent, value, lessBranch, moreBranch){
+			this.parent = parent;
+			this.value = value;
+			this.lessBranch = lessBranch;
+			this.moreBranch = moreBranch;
+		}
+		get hasValue() {
+			return this.value.length != 0;
+		}
+		get isRoot() {
+			return this.parent != null;
+		}
+		get isDone() {
+			return this.value.length <= 1;
+		}
+	}
+	
+	
+	let setYet = false;
+	let anchorPickingMethod = 'first';
+	let opinion = "idle";
+
+	function submitElements() { 
+		
+		if (!setYet){
+			setYet = true;
+			setVis($('#entry'), false);
+			setVis($('#constructor'), true);
+
+			initiateList($('#elements').val());
+		}
+	}
+	
+	function setVis(obj, state){
+		if (state) {
+			obj.css('visibility', 'visible');
+			obj.css('opacity', 1);
+		}
+		else {
+			obj.css('visibility', 'hidden');
+			obj.css('opacity', 0);
+		}
+	}
+	
+	function initiateList(arguments) {
+		let args = arguments.split(/[,;\n]+/);
+		for (let i = 0; i < args.length; i++)
+			args[i] = args[i].trim();
+		let tree = new Node(null, args, [ ], [ ]);
+		console.log(args.length);
+		split(tree);
+		console.log('done');
+	}
+	
+	async function split(node) {
+		
+		if (!node.hasValue){
+			return;
+		}
+		let anchorIx = -1;
+		if (anchorPickingMethod == 'first')
+			anchorIx = 0;
+		else if (anchorPickingMethod == 'last')
+			anchorIx = node.value.length - 1;
+		else if (anchorPickingMethod == 'random'){
+			anchorIx = 0;
+			shuffleFisherYates(node.value);
+		}
+		else throw 'Unexpected picking method ' + anchorPickingMethod;
+		
+		let anchor = node.value[anchorIx];
+		
+		let lessBranch = [ ];
+		let moreBranch = [ ];
+		for (let i = 0; i < node.value.length; i++){
+
+			if (i != anchorIx){
+				display(node.value[i], anchor);
+			
+				while (opinion == 'idle') {
+					await sleep(50);
+				}
+				if (opinion == 'more')
+					moreBranch.push(node.value[i]);
+				else 
+					lessBranch.push(node.value[i]);
+				opinion = 'idle';
+			}
+			
+		}
+		
+		let lessNode = new Node(node, lessBranch, null, null);
+		let moreNode = new Node(node, moreBranch, null, null);
+		node = new Node(node.parent, [ anchor ], lessNode, moreNode );
+		console.log(node);
+		split(lessNode);
+		while (!lessNode.isDone)
+			await sleep(10);
+		split(moreNode);
+		while (!moreNode.isDone)
+			await sleep(10);
+		return;
+	}
+	function display(current, anchor) {
+		$('.anchor').html(anchor);
+		$('.current').html(current);
+	}
+	
+	function shuffleFisherYates(list)
+    {
+        var i = list.length;
+        while (i > 1)
+        {
+            var index = Math.floor(Math.random() * i);
+            i--;
+            var value = list[index];
+            list[index] = list[i];
+            list[i] = value;
+        }
+        return list;
+    }
+	function setOpinion(op){
+		opinion = op;
+	}
+	function sleep(ms) {
+		return new Promise(resolve => setTimeout(resolve, ms));
+	}
+	
 	</script>
 </head>
 <body>
-	<div class="page">
-	
-		<h2>QuickSorter</h2>
-		<form id="#elements-form" action="/QuickSorter/Tree Maker.html">
-			<label for="elements">The elements to be sorted. Separate with commas, semicolons, and/or line breaks.</label> <br>
-			<textarea autofocus id="elements" name="elements"></textarea>	 <br><br>
-			<input type="submit" value="Begin Quick Sort">
-		</form>
-		
+	<div class="wrapper">
+		<div class="page">
+
+			<div class="fade start-visible" id="entry">
+				<h2>QuickSorter</h2>
+				
+				<label for="elements">The elements to be sorted. Separate with commas, semicolons, and/or line breaks.</label> <br>
+				<textarea autofocus id="elements" name="elements"></textarea>	 <br><br>
+				<button onclick="submitElements()">Begin Quick Sort</button>
+			</div>
+			
+			<div class="fade start-hidden" id="constructor">
+				
+				<div style=" position: relative; top: 1in;">
+					<h2>It's sortin' time, baby<br>
+					<span style="font-weight: normal">Current anchor:
+					<span class="anchor">Colored Switches</span></span>
+					</h2>
+					<p class="question">Do you like <span class="current">1</span> more or less than you like <span class="anchor">2</span>?</p>
+					<div class="buttons">
+						<button onclick="setOpinion('more')">More</button>
+						<button onclick="setOpinion('less')">Less</button>
+					</div>
+				</div>
+			</div>
+			
+		</div>
 	</div>
 </body>
 </html>
